@@ -57,10 +57,23 @@
 // STARTED CODE
 // makes variable for start button - finds the button in html with id
 let startButton = document.querySelector("#start");
+let secondsLeft = 76;
+// make a function for quiz timer
+function gameTimer() {
+    let timer = setInterval(function() {
+        secondsLeft--;
+        document.querySelector("#timer").innerHTML = "Time: " + secondsLeft;
+
+        if (secondsLeft === 0) {
+            clearInterval(timer);
+        }
+    }, 1000);
+}
 
 // add event listener for click of start button
 startButton.addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "Commonly used data types DO NOT include: ";
+    gameTimer();
     // make new html smaller
     // make "start quiz" button disappear
     // change <p> into multiple choice or ul
