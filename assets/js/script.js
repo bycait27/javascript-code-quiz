@@ -58,6 +58,12 @@
 // makes variable for start button - finds the button in html with id
 let startButton = document.querySelector("#start");
 let secondsLeft = 76;
+// store multiple choice in arrays
+let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
+let questTwo = ["1.quotes", "2.curly brackets", "3.parentheses", "4.squary brackets"];
+let questThree = ["1.numbers and strings", "2.other arrays", "3.booleans", "4.all of the above"];
+let questFour = ["1.commas", "2.curly brackets", "3.quotes", "4.parentheses"];
+let questFive = ["1.JavaScript", "2.terminal/bash", "3.for loops", "4.console.log"];
 // make a function for quiz timer
 function gameTimer() {
     let timer = setInterval(function() {
