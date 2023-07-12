@@ -80,6 +80,10 @@ function gameTimer() {
         if (secondsLeft === 0) {
             clearInterval(timer);
         }
+
+        if (document.querySelector("#title").innerHTML = "All done!") {
+            // setTimeout??
+        }
     }, 1000);
 }
 
@@ -289,4 +293,49 @@ document.querySelector("#btn16").addEventListener("click", function(event) {
     //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
+});
+
+
+// add event listener for click of multiple choice option buttons
+document.querySelector("#btn17").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "All done!";
+    document.querySelector("#multiple-choice5").style.visibility = "hidden";
+    document.querySelector("#multiple-choice5").style.display = "none";
+    // document.querySelector("#multiple-choice5").style.visibility = "visible";
+    // document.querySelector("#multiple-choice5").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn18").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "All done!";
+    document.querySelector("#multiple-choice5").style.visibility = "hidden";
+    document.querySelector("#multiple-choice5").style.display = "none";
+    // document.querySelector("#multiple-choice5").style.visibility = "visible";
+    // document.querySelector("#multiple-choice5").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn19").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "All done!";
+    document.querySelector("#multiple-choice5").style.visibility = "hidden";
+    document.querySelector("#multiple-choice5").style.display = "none";
+    // document.querySelector("#multiple-choice5").style.visibility = "visible";
+    // document.querySelector("#multiple-choice5").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn20").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "All done!";
+    document.querySelector("#multiple-choice5").style.visibility = "hidden";
+    document.querySelector("#multiple-choice5").style.display = "none";
+    // document.querySelector("#multiple-choice5").style.visibility = "visible";
+    // document.querySelector("#multiple-choice5").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Correct!";
 });
