@@ -202,3 +202,47 @@ document.querySelector("#btn8").addEventListener("click", function(event) {
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
+
+// add event listener for click of multiple choice option buttons
+document.querySelector("#btn9").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "String values must be enclosed within ___ when being assigned to variables.";
+    document.querySelector("#multiple-choice3").style.visibility = "hidden";
+    document.querySelector("#multiple-choice3").style.display = "none";
+    document.querySelector("#multiple-choice4").style.visibility = "visible";
+    document.querySelector("#multiple-choice4").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn10").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "String values must be enclosed within ___ when being assigned to variables.";
+    document.querySelector("#multiple-choice3").style.visibility = "hidden";
+    document.querySelector("#multiple-choice3").style.display = "none";
+    document.querySelector("#multiple-choice4").style.visibility = "visible";
+    document.querySelector("#multiple-choice4").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn11").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "String values must be enclosed within ___ when being assigned to variables.";
+    document.querySelector("#multiple-choice3").style.visibility = "hidden";
+    document.querySelector("#multiple-choice3").style.display = "none";
+    document.querySelector("#multiple-choice4").style.visibility = "visible";
+    document.querySelector("#multiple-choice4").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn12").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "String values must be enclosed within ___ when being assigned to variables.";
+    document.querySelector("#multiple-choice3").style.visibility = "hidden";
+    document.querySelector("#multiple-choice3").style.display = "none";
+    document.querySelector("#multiple-choice4").style.visibility = "visible";
+    document.querySelector("#multiple-choice4").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Correct!";
+});
