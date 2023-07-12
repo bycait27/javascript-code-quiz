@@ -150,6 +150,7 @@ document.querySelector("#btn1").addEventListener("click", function(event) {
     btnThree.innerHTML = "3.parentheses";
     btnFour.innerHTML = "4.square brackets";
     document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
 });
 
 document.querySelector("#btn2").addEventListener("click", function(event) {
@@ -159,6 +160,7 @@ document.querySelector("#btn2").addEventListener("click", function(event) {
     btnThree.innerHTML = "3.parentheses";
     btnFour.innerHTML = "4.square brackets";
     document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
 });
 
 document.querySelector("#btn3").addEventListener("click", function(event) {
@@ -177,4 +179,5 @@ document.querySelector("#btn4").addEventListener("click", function(event) {
     btnThree.innerHTML = "3.parentheses";
     btnFour.innerHTML = "4.square brackets";
     document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
 });
