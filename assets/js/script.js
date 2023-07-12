@@ -246,3 +246,47 @@ document.querySelector("#btn12").addEventListener("click", function(event) {
     //
     document.querySelector("#answer").innerHTML = "Correct!";
 });
+
+// add event listener for click of multiple choice option buttons
+document.querySelector("#btn13").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "A very useful tool used during development and debugging for printing content to the debugger is: ";
+    document.querySelector("#multiple-choice4").style.visibility = "hidden";
+    document.querySelector("#multiple-choice4").style.display = "none";
+    document.querySelector("#multiple-choice5").style.visibility = "visible";
+    document.querySelector("#multiple-choice5").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn14").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "A very useful tool used during development and debugging for printing content to the debugger is: ";
+    document.querySelector("#multiple-choice4").style.visibility = "hidden";
+    document.querySelector("#multiple-choice4").style.display = "none";
+    document.querySelector("#multiple-choice5").style.visibility = "visible";
+    document.querySelector("#multiple-choice5").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn15").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "A very useful tool used during development and debugging for printing content to the debugger is: ";
+    document.querySelector("#multiple-choice4").style.visibility = "hidden";
+    document.querySelector("#multiple-choice4").style.display = "none";
+    document.querySelector("#multiple-choice5").style.visibility = "visible";
+    document.querySelector("#multiple-choice5").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Correct!";
+});
+
+document.querySelector("#btn16").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "A very useful tool used during development and debugging for printing content to the debugger is: ";
+    document.querySelector("#multiple-choice4").style.visibility = "hidden";
+    document.querySelector("#multiple-choice4").style.display = "none";
+    document.querySelector("#multiple-choice5").style.visibility = "visible";
+    document.querySelector("#multiple-choice5").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
