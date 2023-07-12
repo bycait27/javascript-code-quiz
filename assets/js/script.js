@@ -158,3 +158,47 @@ document.querySelector("#btn4").addEventListener("click", function(event) {
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
+
+// add event listener for click of multiple choice option buttons
+document.querySelector("#btn5").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "Arrays in JavaScript can be used to store ___.";
+    document.querySelector("#multiple-choice2").style.visibility = "hidden";
+    document.querySelector("#multiple-choice2").style.display = "none";
+    document.querySelector("#multiple-choice3").style.visibility = "visible";
+    document.querySelector("#multiple-choice3").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn6").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "Arrays in JavaScript can be used to store ___.";
+    document.querySelector("#multiple-choice2").style.visibility = "hidden";
+    document.querySelector("#multiple-choice2").style.display = "none";
+    document.querySelector("#multiple-choice3").style.visibility = "visible";
+    document.querySelector("#multiple-choice3").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Correct!";
+});
+
+document.querySelector("#btn7").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "Arrays in JavaScript can be used to store ___.";
+    document.querySelector("#multiple-choice2").style.visibility = "hidden";
+    document.querySelector("#multiple-choice2").style.display = "none";
+    document.querySelector("#multiple-choice3").style.visibility = "visible";
+    document.querySelector("#multiple-choice3").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
+
+document.querySelector("#btn8").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "Arrays in JavaScript can be used to store ___.";
+    document.querySelector("#multiple-choice2").style.visibility = "hidden";
+    document.querySelector("#multiple-choice2").style.display = "none";
+    document.querySelector("#multiple-choice3").style.visibility = "visible";
+    document.querySelector("#multiple-choice3").style.display = "block";
+    //
+    document.querySelector("#answer").innerHTML = "Wrong!";
+    secondsLeft -= 15;
+});
