@@ -57,7 +57,7 @@
 // STARTED CODE
 // makes variable for start button - finds the button in html with id
 let startButton = document.querySelector("#start");
-
+// starts timer at 75 
 let secondsLeft = 76;
 // stores multiple choice options for question one
 let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
@@ -71,6 +71,17 @@ function questOneBtn() {
         btnOne.appendChild(textOne);
 	    document.querySelector("#multiple-choice").appendChild(btnOne);
         btnOne.classList.add("button-style");
+        btnOne.addEventListener("click", function(event){
+            if (questOne[i] === questOne[2]) {
+                 // replaces "Coding Quiz Challenge" with first question
+    document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    document.querySelector("p").textContent = "Correct!";
+            } else {
+                document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+                document.querySelector("p").textContent = "Wrong!";
+                // subtract from time?
+            }
+        });
 	}
 }
 // stores multiple choice options for question two
@@ -106,3 +117,8 @@ startButton.addEventListener("click", function(event) {
     // calls timer function 
     gameTimer();
 });
+
+// add event listener for click of multiple choice option buttons
+// questOneBtn.addEventListener("click", function(event) {
+//     alert("hello");
+// });
