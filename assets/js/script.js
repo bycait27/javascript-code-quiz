@@ -99,7 +99,7 @@ let secondsLeft = 76;
 // stores multiple choice options for question one
 let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
 // stores multiple choice options for question two
-let questTwo = ["1.quotes", "2.curly brackets", "3.parentheses", "4.squary brackets"];
+let questTwo = ["1.quotes", "2.curly brackets", "3.parentheses", "4.square brackets"];
 // stores multiple choice options for question three
 let questThree = ["1.numbers and strings", "2.other arrays", "3.booleans", "4.all of the above"];
 // stores multiple choice options for question four
@@ -145,20 +145,36 @@ startButton.addEventListener("click", function(event) {
 // add event listener for click of multiple choice option buttons
 document.querySelector("#btn1").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    btnOne.innerHTML = "1.quotes";
+    btnTwo.innerHTML = "2.curly brackets";
+    btnThree.innerHTML = "3.parentheses";
+    btnFour.innerHTML = "4.square brackets";
     document.querySelector("#answer").innerHTML = "Wrong!";
 });
 
 document.querySelector("#btn2").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    btnOne.innerHTML = "1.quotes";
+    btnTwo.innerHTML = "2.curly brackets";
+    btnThree.innerHTML = "3.parentheses";
+    btnFour.innerHTML = "4.square brackets";
     document.querySelector("#answer").innerHTML = "Wrong!";
 });
 
 document.querySelector("#btn3").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    btnOne.innerHTML = "1.quotes";
+    btnTwo.innerHTML = "2.curly brackets";
+    btnThree.innerHTML = "3.parentheses";
+    btnFour.innerHTML = "4.square brackets";
     document.querySelector("#answer").innerHTML = "Correct!";
 });
 
 document.querySelector("#btn4").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    btnOne.innerHTML = "1.quotes";
+    btnTwo.innerHTML = "2.curly brackets";
+    btnThree.innerHTML = "3.parentheses";
+    btnFour.innerHTML = "4.square brackets";
     document.querySelector("#answer").innerHTML = "Wrong!";
 });
