@@ -57,12 +57,29 @@
 // STARTED CODE
 // makes variable for start button - finds the button in html with id
 let startButton = document.querySelector("#start");
+
 let secondsLeft = 76;
-// store multiple choice in arrays
+// stores multiple choice options for question one
 let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
+// make a function to create multiple choice buttons
+function questOneBtn() {
+    // hides p element from beginning of quiz
+    document.querySelector("p").style.visibility = "hidden";
+	for (let i = 0; i < questOne.length; i++) {
+	    let btnOne = document.createElement("button");
+        let textOne = document.createTextNode(questOne[i]);
+        btnOne.appendChild(textOne);
+	    document.querySelector("#multiple-choice").appendChild(btnOne);
+        btnOne.classList.add("button-style");
+	}
+}
+// stores multiple choice options for question two
 let questTwo = ["1.quotes", "2.curly brackets", "3.parentheses", "4.squary brackets"];
+// stores multiple choice options for question three
 let questThree = ["1.numbers and strings", "2.other arrays", "3.booleans", "4.all of the above"];
+// stores multiple choice options for question four
 let questFour = ["1.commas", "2.curly brackets", "3.quotes", "4.parentheses"];
+// stores multiple choice options for question five
 let questFive = ["1.JavaScript", "2.terminal/bash", "3.for loops", "4.console.log"];
 // make a function for quiz timer
 function gameTimer() {
@@ -78,9 +95,14 @@ function gameTimer() {
 
 // add event listener for click of start button
 startButton.addEventListener("click", function(event) {
+    // hides "start quiz" button
+    document.querySelector("#start").style.visibility = "hidden";
+    // replaces "Coding Quiz Challenge" with first question
     document.querySelector("#title").innerHTML = "Commonly used data types DO NOT include: ";
+    // calls function to generate multiple choice buttons
+    questOneBtn();
+    // styling of question one header
+    document.querySelector("#title").style.cssText = "font-size:20px;"
+    // calls timer function 
     gameTimer();
-    // make new html smaller
-    // make "start quiz" button disappear
-    // change <p> into multiple choice or ul
 });
