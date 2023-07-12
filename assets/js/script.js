@@ -1,41 +1,3 @@
-// PSEUDOCODE
-// make variable for the start button from id in html
-
-// add event listener for click of start button
-
-// onclick
-    // replace the h1 to match the first question
-    // replace p with an unordered list of multiple choice buttons
-        // add click event for each button in list
-        // onclick
-            // replace the h1 to match the second question
-            // replace p with an unordered list of multiple choice buttons
-                // add click event for each button in list
-                // onclick
-                    // replace the h1 to match the third question
-                    // replace p with an unordered list of multiple choice buttons
-                        // add click event for each button in list
-                        // onclick
-                    // replace the h1 to match the fourth question
-                    // replace p with an unordered list of multiple choice buttons
-                        // add click event for each button in list
-                        // onclick
-                    // replace the h1 to match the fifth question
-                    // replace p with an unordered list of multiple choice buttons
-                        // add click event for each button in list
-
-//FOR EACH MULTIPLE CHOICE LIST
-
-// store multiple choice in an array
-            // make for loop to create multiple buttons for each element in array
-            // check each possible click and make if statement to say whether it is true or false and make conditions 
-                // if (user clicks on first choice and it is true)
-                    // user is taken to next question 
-                    // "Correct!" is displayed in italics under the new question
-                // else 
-                    // user is taken to next question
-                    // "Wrong!" is displayed in italics under the new question
-                // etc.
 // keep track of wins and losses, as well as the timer (store score in localStorage)
 
 //once fifth question is over, display "All done!" as h1
@@ -54,35 +16,12 @@
                     // onclick of "Clear Highscores"
                         // the highscores disappear
 
-// STARTED CODE
-// make a function to create multiple choice buttons
-// function questOneBtn() {
-//     // hides p element from beginning of quiz
-//     document.querySelector("p").style.visibility = "hidden";
-// 	for (let i = 0; i < questOne.length; i++) {
-// 	    let btnOne = document.createElement("button");
-//         let textOne = document.createTextNode(questOne[i]);
-//         btnOne.appendChild(textOne);
-// 	    document.querySelector("#multiple-choice").appendChild(btnOne);
-//         btnOne.classList.add("button-style");
-//         btnOne.addEventListener("click", function(event){
-//             if (questOne[i] === questOne[2]) {
-//                  // replaces "Coding Quiz Challenge" with first question
-//     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
-//     document.querySelector("p").textContent = "Correct!";
-//             } else {
-//                 document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
-//                 document.querySelector("p").textContent = "Wrong!";
-//                 // subtract from time?
-//             }
-//         });
-	// }
-// }
+
 // makes variable for start button - finds the button in html with id
 let startButton = document.querySelector("#start");
 
 // store buttons in variable
-let btn = document.querySelector("#multiple-choice");
+let multChoice1 = document.querySelector("#multiple-choice1");
 
 // store btn1 in variable
 let btnOne = document.querySelector("#btn1");
@@ -93,19 +32,44 @@ let btnThree = document.querySelector("#btn3");
 // store btn4 in variable
 let btnFour = document.querySelector("#btn4");
 
+// store btn5 in variable
+let btnFive = document.querySelector("#btn5");
+// store btn6 in variable
+let btnSix = document.querySelector("#btn6");
+// store btn7 in variable
+let btnSeven = document.querySelector("#btn7");
+// store btn8 in variable
+let btnEight = document.querySelector("#btn8");
+
+// store btn9 in variable
+let btnNine = document.querySelector("#btn9");
+// store btn10 in variable
+let btnTen = document.querySelector("#btn10");
+// store btn11 in variable
+let btnEleven = document.querySelector("#btn11");
+// store btn12 in variable
+let btnTwelve = document.querySelector("#btn12");
+
+// store btn13 in variable
+let btnThirteen = document.querySelector("#btn13");
+// store btn14 in variable
+let btnFourteen = document.querySelector("#btn14");
+// store btn15 in variable
+let btnFifteen = document.querySelector("#btn15");
+// store btn16 in variable
+let btnSixteen = document.querySelector("#btn16");
+
+// store btn17 in variable
+let btnSeventeen = document.querySelector("#btn17");
+// store btn18 in variable
+let btnEighteen = document.querySelector("#btn18");
+// store btn19 in variable
+let btnNineteen = document.querySelector("#btn19");
+// store btn20 in variable
+let btnTwenty = document.querySelector("#btn20");
+
 // starts timer at 75 
 let secondsLeft = 76;
-
-// stores multiple choice options for question one
-let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
-// stores multiple choice options for question two
-let questTwo = ["1.quotes", "2.curly brackets", "3.parentheses", "4.square brackets"];
-// stores multiple choice options for question three
-let questThree = ["1.numbers and strings", "2.other arrays", "3.booleans", "4.all of the above"];
-// stores multiple choice options for question four
-let questFour = ["1.commas", "2.curly brackets", "3.quotes", "4.parentheses"];
-// stores multiple choice options for question five
-let questFive = ["1.JavaScript", "2.terminal/bash", "3.for loops", "4.console.log"];
 
 // make a function for quiz timer
 function gameTimer() {
@@ -121,8 +85,17 @@ function gameTimer() {
 
 // hide buttons on page load
 window.onload = (event) => {
-    document.querySelector("#multiple-choice").style.visibility = "hidden";
-    document.querySelector("#multiple-choice").style.display = "none";
+    document.querySelector("#multiple-choice1").style.visibility = "hidden";
+    document.querySelector("#multiple-choice1").style.display = "none";
+    document.querySelector("#multiple-choice2").style.visibility = "hidden";
+    document.querySelector("#multiple-choice2").style.display = "none";
+    document.querySelector("#multiple-choice3").style.visibility = "hidden";
+    document.querySelector("#multiple-choice3").style.display = "none";
+    document.querySelector("#multiple-choice4").style.visibility = "hidden";
+    document.querySelector("#multiple-choice4").style.display = "none";
+    document.querySelector("#multiple-choice5").style.visibility = "hidden";
+    document.querySelector("#multiple-choice5").style.display = "none";
+    //
 }
 
 // add event listener for click of start button
@@ -134,8 +107,8 @@ startButton.addEventListener("click", function(event) {
     // hide p element from beginning of quiz
     document.querySelector("p").style.visibility = "hidden";
     // make multiple choice buttons visible
-    document.querySelector("#multiple-choice").style.visibility = "visible";
-    document.querySelector("#multiple-choice").style.display = "block";
+    document.querySelector("#multiple-choice1").style.visibility = "visible";
+    document.querySelector("#multiple-choice1").style.display = "block";
     // styling of question one header
     document.querySelector("#title").style.cssText = "font-size:20px;"
     // calls timer function 
@@ -145,39 +118,43 @@ startButton.addEventListener("click", function(event) {
 // add event listener for click of multiple choice option buttons
 document.querySelector("#btn1").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
-    btnOne.innerHTML = "1.quotes";
-    btnTwo.innerHTML = "2.curly brackets";
-    btnThree.innerHTML = "3.parentheses";
-    btnFour.innerHTML = "4.square brackets";
+    document.querySelector("#multiple-choice1").style.visibility = "hidden";
+    document.querySelector("#multiple-choice1").style.display = "none";
+    document.querySelector("#multiple-choice2").style.visibility = "visible";
+    document.querySelector("#multiple-choice2").style.display = "block";
+    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
 
 document.querySelector("#btn2").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
-    btnOne.innerHTML = "1.quotes";
-    btnTwo.innerHTML = "2.curly brackets";
-    btnThree.innerHTML = "3.parentheses";
-    btnFour.innerHTML = "4.square brackets";
+    document.querySelector("#multiple-choice1").style.visibility = "hidden";
+    document.querySelector("#multiple-choice1").style.display = "none";
+    document.querySelector("#multiple-choice2").style.visibility = "visible";
+    document.querySelector("#multiple-choice2").style.display = "block";
+    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
 
 document.querySelector("#btn3").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
-    btnOne.innerHTML = "1.quotes";
-    btnTwo.innerHTML = "2.curly brackets";
-    btnThree.innerHTML = "3.parentheses";
-    btnFour.innerHTML = "4.square brackets";
+    document.querySelector("#multiple-choice1").style.visibility = "hidden";
+    document.querySelector("#multiple-choice1").style.display = "none";
+    document.querySelector("#multiple-choice2").style.visibility = "visible";
+    document.querySelector("#multiple-choice2").style.display = "block";
+    //
     document.querySelector("#answer").innerHTML = "Correct!";
 });
 
 document.querySelector("#btn4").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
-    btnOne.innerHTML = "1.quotes";
-    btnTwo.innerHTML = "2.curly brackets";
-    btnThree.innerHTML = "3.parentheses";
-    btnFour.innerHTML = "4.square brackets";
+    document.querySelector("#multiple-choice1").style.visibility = "hidden";
+    document.querySelector("#multiple-choice1").style.display = "none";
+    document.querySelector("#multiple-choice2").style.visibility = "visible";
+    document.querySelector("#multiple-choice2").style.display = "block";
+    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
