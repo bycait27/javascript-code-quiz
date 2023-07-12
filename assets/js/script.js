@@ -62,28 +62,28 @@ let secondsLeft = 76;
 // stores multiple choice options for question one
 let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
 // make a function to create multiple choice buttons
-function questOneBtn() {
-    // hides p element from beginning of quiz
-    document.querySelector("p").style.visibility = "hidden";
-	for (let i = 0; i < questOne.length; i++) {
-	    let btnOne = document.createElement("button");
-        let textOne = document.createTextNode(questOne[i]);
-        btnOne.appendChild(textOne);
-	    document.querySelector("#multiple-choice").appendChild(btnOne);
-        btnOne.classList.add("button-style");
-        btnOne.addEventListener("click", function(event){
-            if (questOne[i] === questOne[2]) {
-                 // replaces "Coding Quiz Challenge" with first question
-    document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
-    document.querySelector("p").textContent = "Correct!";
-            } else {
-                document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
-                document.querySelector("p").textContent = "Wrong!";
-                // subtract from time?
-            }
-        });
-	}
-}
+// function questOneBtn() {
+//     // hides p element from beginning of quiz
+//     document.querySelector("p").style.visibility = "hidden";
+// 	for (let i = 0; i < questOne.length; i++) {
+// 	    let btnOne = document.createElement("button");
+//         let textOne = document.createTextNode(questOne[i]);
+//         btnOne.appendChild(textOne);
+// 	    document.querySelector("#multiple-choice").appendChild(btnOne);
+//         btnOne.classList.add("button-style");
+//         btnOne.addEventListener("click", function(event){
+//             if (questOne[i] === questOne[2]) {
+//                  // replaces "Coding Quiz Challenge" with first question
+//     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+//     document.querySelector("p").textContent = "Correct!";
+//             } else {
+//                 document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+//                 document.querySelector("p").textContent = "Wrong!";
+//                 // subtract from time?
+//             }
+//         });
+	// }
+// }
 // stores multiple choice options for question two
 let questTwo = ["1.quotes", "2.curly brackets", "3.parentheses", "4.squary brackets"];
 // stores multiple choice options for question three
@@ -104,14 +104,23 @@ function gameTimer() {
     }, 1000);
 }
 
+// hide buttons on page load
+window.onload = (event) => {
+    document.querySelector("#multiple-choice").style.visibility = "hidden";
+    document.querySelector("#multiple-choice").style.display = "none";
+}
+
 // add event listener for click of start button
 startButton.addEventListener("click", function(event) {
     // hides "start quiz" button
     document.querySelector("#start").style.visibility = "hidden";
     // replaces "Coding Quiz Challenge" with first question
     document.querySelector("#title").innerHTML = "Commonly used data types DO NOT include: ";
-    // calls function to generate multiple choice buttons
-    questOneBtn();
+    // hide p element from beginning of quiz
+    document.querySelector("p").style.visibility = "hidden";
+    // make multiple choice buttons visible
+    document.querySelector("#multiple-choice").style.visibility = "visible";
+    document.querySelector("#multiple-choice").style.display = "block";
     // styling of question one header
     document.querySelector("#title").style.cssText = "font-size:20px;"
     // calls timer function 
