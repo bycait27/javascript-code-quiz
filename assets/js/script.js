@@ -81,9 +81,9 @@ function gameTimer() {
             clearInterval(timer);
         }
 
-        if (document.querySelector("#title").innerHTML = "All done!") {
-            // setTimeout??
-        }
+        // if (document.querySelector("#title").innerHTML = "All done!") {
+        //     // setTimeout??
+        // }
     }, 1000);
 }
 
@@ -99,6 +99,8 @@ window.onload = (event) => {
     document.querySelector("#multiple-choice4").style.display = "none";
     document.querySelector("#multiple-choice5").style.visibility = "hidden";
     document.querySelector("#multiple-choice5").style.display = "none";
+    document.querySelector("#all-done").style.visibility = "hidden";
+    document.querySelector("#all-done").style.display = "none";
     //
 }
 
@@ -301,9 +303,10 @@ document.querySelector("#btn17").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "All done!";
     document.querySelector("#multiple-choice5").style.visibility = "hidden";
     document.querySelector("#multiple-choice5").style.display = "none";
-    // document.querySelector("#multiple-choice5").style.visibility = "visible";
-    // document.querySelector("#multiple-choice5").style.display = "block";
-    //
+    document.querySelector("#all-done").style.visibility = "visible";
+    document.querySelector("#all-done").style.display = "block";
+    document.querySelector("p").style.display = "none";
+    document.querySelector("#start").style.display = "none";
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -312,9 +315,10 @@ document.querySelector("#btn18").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "All done!";
     document.querySelector("#multiple-choice5").style.visibility = "hidden";
     document.querySelector("#multiple-choice5").style.display = "none";
-    // document.querySelector("#multiple-choice5").style.visibility = "visible";
-    // document.querySelector("#multiple-choice5").style.display = "block";
-    //
+    document.querySelector("#all-done").style.visibility = "visible";
+    document.querySelector("#all-done").style.display = "block";
+    document.querySelector("p").style.display = "none";
+    document.querySelector("#start").style.display = "none";
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -323,9 +327,10 @@ document.querySelector("#btn19").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "All done!";
     document.querySelector("#multiple-choice5").style.visibility = "hidden";
     document.querySelector("#multiple-choice5").style.display = "none";
-    // document.querySelector("#multiple-choice5").style.visibility = "visible";
-    // document.querySelector("#multiple-choice5").style.display = "block";
-    //
+    document.querySelector("#all-done").style.visibility = "visible";
+    document.querySelector("#all-done").style.display = "block";
+    document.querySelector("p").style.display = "none";
+    document.querySelector("#start").style.display = "none";
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -334,8 +339,9 @@ document.querySelector("#btn20").addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "All done!";
     document.querySelector("#multiple-choice5").style.visibility = "hidden";
     document.querySelector("#multiple-choice5").style.display = "none";
-    // document.querySelector("#multiple-choice5").style.visibility = "visible";
-    // document.querySelector("#multiple-choice5").style.display = "block";
-    //
+    document.querySelector("#all-done").style.visibility = "visible";
+    document.querySelector("#all-done").style.display = "block";
+    document.querySelector("p").style.display = "none";
+    document.querySelector("#start").style.display = "none";
     document.querySelector("#answer").innerHTML = "Correct!";
 });
