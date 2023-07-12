@@ -55,12 +55,6 @@
                         // the highscores disappear
 
 // STARTED CODE
-// makes variable for start button - finds the button in html with id
-let startButton = document.querySelector("#start");
-// starts timer at 75 
-let secondsLeft = 76;
-// stores multiple choice options for question one
-let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
 // make a function to create multiple choice buttons
 // function questOneBtn() {
 //     // hides p element from beginning of quiz
@@ -84,6 +78,26 @@ let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
 //         });
 	// }
 // }
+// makes variable for start button - finds the button in html with id
+let startButton = document.querySelector("#start");
+
+// store buttons in variable
+let btn = document.querySelector("#multiple-choice");
+
+// store btn1 in variable
+let btnOne = document.querySelector("#btn1");
+// store btn2 in variable
+let btnTwo = document.querySelector("#btn2");
+// store btn3 in variable
+let btnThree = document.querySelector("#btn3");
+// store btn4 in variable
+let btnFour = document.querySelector("#btn4");
+
+// starts timer at 75 
+let secondsLeft = 76;
+
+// stores multiple choice options for question one
+let questOne = ["1.strings", "2.booleans", "3.alerts", "4.numbers"];
 // stores multiple choice options for question two
 let questTwo = ["1.quotes", "2.curly brackets", "3.parentheses", "4.squary brackets"];
 // stores multiple choice options for question three
@@ -92,6 +106,7 @@ let questThree = ["1.numbers and strings", "2.other arrays", "3.booleans", "4.al
 let questFour = ["1.commas", "2.curly brackets", "3.quotes", "4.parentheses"];
 // stores multiple choice options for question five
 let questFive = ["1.JavaScript", "2.terminal/bash", "3.for loops", "4.console.log"];
+
 // make a function for quiz timer
 function gameTimer() {
     let timer = setInterval(function() {
@@ -128,6 +143,22 @@ startButton.addEventListener("click", function(event) {
 });
 
 // add event listener for click of multiple choice option buttons
-// questOneBtn.addEventListener("click", function(event) {
-//     alert("hello");
-// });
+document.querySelector("#btn1").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    document.querySelector("#answer").innerHTML = "Wrong!";
+});
+
+document.querySelector("#btn2").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    document.querySelector("#answer").innerHTML = "Wrong!";
+});
+
+document.querySelector("#btn3").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    document.querySelector("#answer").innerHTML = "Correct!";
+});
+
+document.querySelector("#btn4").addEventListener("click", function(event) {
+    document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    document.querySelector("#answer").innerHTML = "Wrong!";
+});
