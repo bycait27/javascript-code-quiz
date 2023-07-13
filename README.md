@@ -14,8 +14,14 @@ To use this website, the user simply clicks the "Start Quiz" button below the qu
 
 After they are done taking the quiz, they are given their score, as well as a text box telling the user to input their initials. Located next to this text box is a "Submit" button where the user can submit their initials, which will be stored along with their quiz score. Student scores can be accessed via "View Highscores" in the upper left corner of the webpage.
 
-![screenshot]()
-![screenshot]()
+![tutorial](./assets/images/Screen%20Recording%202023-07-12%20at%208.01.32%20PM.mov)
+![screenshot1](./assets/images/Screen%20Shot%202023-07-12%20at%207.59.20%20PM.png)
+![screenshot2](./assets/images/Screen%20Shot%202023-07-12%20at%207.59.28%20PM.png)
+![screenshot3](./assets/images/Screen%20Shot%202023-07-12%20at%207.59.37%20PM.png)
+![screenshot4](./assets/images/Screen%20Shot%202023-07-12%20at%207.59.46%20PM.png)
+![screenshot5](./assets/images/Screen%20Shot%202023-07-12%20at%207.59.51%20PM.png)
+![screenshot6](./assets/images/Screen%20Shot%202023-07-12%20at%207.59.58%20PM.png)
+![screenshot7](./assets/images/Screen%20Shot%202023-07-12%20at%208.00.04%20PM.png)
 
 [website](https://bycait27.github.io/javascript-code-quiz/)
 
