@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links external css stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Code Quiz</title>
 </head>
@@ -20,31 +21,35 @@
     <main>
          <!-- title of the quiz -->
         <h1 id="title">Coding Quiz Challenge</h1>
-        <!-- make div for multiple choice buttons -->
+        <!-- div for multiple choice option buttons for first quiz question -->
         <div id="multiple-choice1">
             <button type="button" id="btn1">1.strings</button>
             <button type="button" id="btn2">2.booleans</button>
             <button type="button" id="btn3">3.alerts</button>
             <button type="button" id="btn4">4.numbers</button>
         </div>
+        <!-- div for multiple choice option buttons for second quiz question -->
         <div id="multiple-choice2">
             <button type="button" id="btn5">1.quotes</button>
             <button type="button" id="btn6">2.curly brackets</button>
             <button type="button" id="btn7">3.parentheses</button>
             <button type="button" id="btn8">4.square brackets</button>
         </div>
+        <!-- div for multiple choice option buttons for third quiz question -->
         <div id="multiple-choice3">
             <button type="button" id="btn9">1.numbers and strings</button>
             <button type="button" id="btn10">2.other arrays</button>
             <button type="button" id="btn11">3.booleans</button>
             <button type="button" id="btn12">4.all of the above</button>
         </div>
+        <!-- div for multiple choice option buttons for fourth quiz question -->
         <div id="multiple-choice4">
             <button type="button" id="btn13">1.commas</button>
             <button type="button" id="btn14">2.curly brackets</button>
             <button type="button" id="btn15">3.quotes</button>
             <button type="button" id="btn16">4.parentheses</button>
         </div>
+        <!-- div for multiple choice option buttons for fifth quiz question -->
         <div id="multiple-choice5">
             <button type="button" id="btn17">1.JavaScript</button>
             <button type="button" id="btn18">2.terminal/bash</button>
@@ -55,12 +60,18 @@
         <p>Try to answer the following code-related questions within the time<br>limit. Keep in mind that incorrect answers will penalize your scoretime<br>by ten seconds!</p>
         <!-- displays button to start quiz -->
         <button type="button" id="start">Start Quiz</button>
+        <!-- div for when user finishes quiz -->
         <div id="all-done">
+            <!-- displays final score to user -->
             <p id="final-score">Your final score is...</p>
+            <!-- creates label for text input box -->
             <label for="initials">Enter Initials:</label>
+            <!-- text input box for user to enter their initials -->
             <input type="text" id="initials" name="initials" required placeholder="Enter your initials here..." minlength="2" maxlength="3">
+            <!-- button to submit their initials -->
             <button type="button" id="submit">Submit</button>
         </div>
+        <!-- empty div to hold "Wrong!" or "Correct!" -->
         <div id="answer">
 
         </div>

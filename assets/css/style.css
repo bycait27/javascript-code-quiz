@@ -1,9 +1,12 @@
+/* centers header and p element to center of webpage */
 h1, p {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
+/* makes the color of the button dark violet, the text white, aligns text to center of button, and justifies this 
+button to the center of the webpage */
 button {
     background-color: darkviolet;
     color: white;
@@ -14,6 +17,7 @@ button {
     margin-right: auto;
 }
 
+/* this makes the "View Highscores" header dark violet and justifies it to the very left of the web page */
 #scores {
     color: darkviolet;
     display: flex;
@@ -21,18 +25,9 @@ button {
     margin: 0px;
 }
 
+/* this makes the "Time: " header dark violet and justifies it to the very right of the web page */
 #timer {
    display: flex;
    justify-content: right;
    margin: 0px;
-}
-
-.button-style {
-    background-color: darkviolet;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-left: 10px;
 }

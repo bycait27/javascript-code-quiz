@@ -1,27 +1,5 @@
-// keep track of wins and losses, as well as the timer (store score in localStorage)
-
-//once fifth question is over, display "All done!" as h1
-    // display final score in p 
-    // make new input element with button
-    //"Wrong!" or "Correct!" will still be displayed in italics from last question
-
-        // when input box is clicked, score from last question disappears
-        // when submitted, initials and score will be stored in localStorage
-            // then we are taken to a new h1 that displays "Highscores"
-                // underneath is a new p text with the scores from localStorage from highest to lowest
-                // this has a background color different from webpage (purple)
-                // two new buttons will be displayed inline
-                    // onclick of "Go Back"
-                        // user is taken back to the first h1 and p with the origin "start quiz" button
-                    // onclick of "Clear Highscores"
-                        // the highscores disappear
-
-
 // makes variable for start button - finds the button in html with id
 let startButton = document.querySelector("#start");
-
-// store buttons in variable
-let multChoice1 = document.querySelector("#multiple-choice1");
 
 // store btn1 in variable
 let btnOne = document.querySelector("#btn1");
@@ -87,7 +65,7 @@ function gameTimer() {
     }, 1000);
 }
 
-// hide buttons on page load
+// hide multiple choice buttons on page load, as well as "All Done!" page"
 window.onload = (event) => {
     document.querySelector("#multiple-choice1").style.visibility = "hidden";
     document.querySelector("#multiple-choice1").style.display = "none";
@@ -101,7 +79,6 @@ window.onload = (event) => {
     document.querySelector("#multiple-choice5").style.display = "none";
     document.querySelector("#all-done").style.visibility = "hidden";
     document.querySelector("#all-done").style.display = "none";
-    //
 }
 
 // add event listener for click of start button
@@ -112,7 +89,7 @@ startButton.addEventListener("click", function(event) {
     document.querySelector("#title").innerHTML = "Commonly used data types DO NOT include: ";
     // hide p element from beginning of quiz
     document.querySelector("p").style.visibility = "hidden";
-    // make multiple choice buttons visible
+    // makes first multiple choice question buttons visible
     document.querySelector("#multiple-choice1").style.visibility = "visible";
     document.querySelector("#multiple-choice1").style.display = "block";
     // styling of question one header
@@ -121,8 +98,11 @@ startButton.addEventListener("click", function(event) {
     gameTimer();
 });
 
+// SECOND QUESTION
+
 // add event listener for click of multiple choice option buttons
 document.querySelector("#btn1").addEventListener("click", function(event) {
+    // replaces first question with second question text
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
     document.querySelector("#multiple-choice1").style.visibility = "hidden";
     document.querySelector("#multiple-choice1").style.display = "none";
@@ -134,36 +114,42 @@ document.querySelector("#btn1").addEventListener("click", function(event) {
 });
 
 document.querySelector("#btn2").addEventListener("click", function(event) {
+    // replaces first question with second question text
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
+    // hide first question buttons
     document.querySelector("#multiple-choice1").style.visibility = "hidden";
     document.querySelector("#multiple-choice1").style.display = "none";
+    // make second question buttons visible
     document.querySelector("#multiple-choice2").style.visibility = "visible";
     document.querySelector("#multiple-choice2").style.display = "block";
-    //
+    // tell user their answer is wrong by displaying in empty div
     document.querySelector("#answer").innerHTML = "Wrong!";
+    // deducts 15 seconds from time
     secondsLeft -= 15;
 });
 
 document.querySelector("#btn3").addEventListener("click", function(event) {
+    // replaces first question with second question text
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
     document.querySelector("#multiple-choice1").style.visibility = "hidden";
     document.querySelector("#multiple-choice1").style.display = "none";
     document.querySelector("#multiple-choice2").style.visibility = "visible";
     document.querySelector("#multiple-choice2").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Correct!";
 });
 
 document.querySelector("#btn4").addEventListener("click", function(event) {
+    // replaces first question with second question text
     document.querySelector("#title").innerHTML = "The condition in an if/else statement is enclosed within ___.";
     document.querySelector("#multiple-choice1").style.visibility = "hidden";
     document.querySelector("#multiple-choice1").style.display = "none";
     document.querySelector("#multiple-choice2").style.visibility = "visible";
     document.querySelector("#multiple-choice2").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
+
+// THIRD QUESTION
 
 // add event listener for click of multiple choice option buttons
 document.querySelector("#btn5").addEventListener("click", function(event) {
@@ -172,7 +158,6 @@ document.querySelector("#btn5").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice2").style.display = "none";
     document.querySelector("#multiple-choice3").style.visibility = "visible";
     document.querySelector("#multiple-choice3").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -183,7 +168,6 @@ document.querySelector("#btn6").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice2").style.display = "none";
     document.querySelector("#multiple-choice3").style.visibility = "visible";
     document.querySelector("#multiple-choice3").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Correct!";
 });
 
@@ -193,7 +177,6 @@ document.querySelector("#btn7").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice2").style.display = "none";
     document.querySelector("#multiple-choice3").style.visibility = "visible";
     document.querySelector("#multiple-choice3").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -204,10 +187,11 @@ document.querySelector("#btn8").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice2").style.display = "none";
     document.querySelector("#multiple-choice3").style.visibility = "visible";
     document.querySelector("#multiple-choice3").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
+
+// FOURTH QUESTION
 
 // add event listener for click of multiple choice option buttons
 document.querySelector("#btn9").addEventListener("click", function(event) {
@@ -216,7 +200,6 @@ document.querySelector("#btn9").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice3").style.display = "none";
     document.querySelector("#multiple-choice4").style.visibility = "visible";
     document.querySelector("#multiple-choice4").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -227,7 +210,6 @@ document.querySelector("#btn10").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice3").style.display = "none";
     document.querySelector("#multiple-choice4").style.visibility = "visible";
     document.querySelector("#multiple-choice4").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -238,7 +220,6 @@ document.querySelector("#btn11").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice3").style.display = "none";
     document.querySelector("#multiple-choice4").style.visibility = "visible";
     document.querySelector("#multiple-choice4").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -249,9 +230,10 @@ document.querySelector("#btn12").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice3").style.display = "none";
     document.querySelector("#multiple-choice4").style.visibility = "visible";
     document.querySelector("#multiple-choice4").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Correct!";
 });
+
+// FIFTH QUESTION
 
 // add event listener for click of multiple choice option buttons
 document.querySelector("#btn13").addEventListener("click", function(event) {
@@ -260,7 +242,6 @@ document.querySelector("#btn13").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice4").style.display = "none";
     document.querySelector("#multiple-choice5").style.visibility = "visible";
     document.querySelector("#multiple-choice5").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -271,7 +252,6 @@ document.querySelector("#btn14").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice4").style.display = "none";
     document.querySelector("#multiple-choice5").style.visibility = "visible";
     document.querySelector("#multiple-choice5").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
@@ -282,7 +262,6 @@ document.querySelector("#btn15").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice4").style.display = "none";
     document.querySelector("#multiple-choice5").style.visibility = "visible";
     document.querySelector("#multiple-choice5").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Correct!";
 });
 
@@ -292,14 +271,16 @@ document.querySelector("#btn16").addEventListener("click", function(event) {
     document.querySelector("#multiple-choice4").style.display = "none";
     document.querySelector("#multiple-choice5").style.visibility = "visible";
     document.querySelector("#multiple-choice5").style.display = "block";
-    //
     document.querySelector("#answer").innerHTML = "Wrong!";
     secondsLeft -= 15;
 });
 
+// SCORE PAGE
+
 
 // add event listener for click of multiple choice option buttons
 document.querySelector("#btn17").addEventListener("click", function(event) {
+    // makes score page visible
     document.querySelector("#title").innerHTML = "All done!";
     document.querySelector("#multiple-choice5").style.visibility = "hidden";
     document.querySelector("#multiple-choice5").style.display = "none";
